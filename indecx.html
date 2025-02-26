@@ -1,3 +1,133 @@
-<h1>Hola mundo</h1>
-<h2>Hola mundo</h2>
-<h3>Hola mundo</h3>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #141414;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar img {
+            height: 30px;
+        }
+
+        .navbar button {
+            background-color: #e50914;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .navbar button:hover {
+            background-color: #f40612;
+        }
+
+        .banner {
+            position: relative;
+            height: 60vh;
+            background: url('https://assets.nflxext.com/ffe/siteui/vlv3/cfe1358c-2ed5-46cf-83fc-e991cbe83b99/ee81f8ea-37d2-43e5-8773-e7ff6c5988ad/AR-es-20230213-popsignuptwoweeks-perspective_alpha_website_large.jpg') no-repeat center center;
+            background-size: cover;
+        }
+
+        .banner .banner__contents {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+        }
+
+        .banner h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .banner button {
+            background-color: #e50914;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .banner button:hover {
+            background-color: #f40612;
+        }
+
+        .row {
+            display: flex;
+            overflow-x: scroll;
+            padding: 20px;
+        }
+
+        .row img {
+            height: 200px;
+            margin-right: 10px;
+            transition: transform 0.2s;
+        }
+
+        .row img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Barra de desplazamiento */
+        .row::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <div class="navbar">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Netflix_logo.svg" alt="Netflix Logo">
+        <button>Iniciar sesión</button>
+    </div>
+
+    <!-- Banner principal -->
+    <div class="banner">
+        <div class="banner__contents">
+            <h1>Película de ejemplo</h1>
+            <button>Ver ahora</button>
+        </div>
+    </div>
+
+    <!-- Sección de contenido -->
+    <div class="row">
+        <img src="https://m.media-amazon.com/images/I/91jNWzrdpTL._AC_SY679_.jpg" alt="Película 1">
+        <img src="https://m.media-amazon.com/images/I/61+dbbSErxL._AC_SY679_.jpg" alt="Película 2">
+        <img src="https://m.media-amazon.com/images/I/91jNWzrdpTL._AC_SY679_.jpg" alt="Película 3">
+        <img src="https://m.media-amazon.com/images/I/61+dbbSErxL._AC_SY679_.jpg" alt="Película 4">
+        <img src="https://m.media-amazon.com/images/I/91jNWzrdpTL._AC_SY679_.jpg" alt="Película 5">
+        <img src="https://m.media-amazon.com/images/I/61+dbbSErxL._AC_SY679_.jpg" alt="Película 6">
+    </div>
+
+    <!-- Otra sección de contenido -->
+    <div class="row">
+        <img src="https://m.media-amazon.com/images/I/91jNWzrdpTL._AC_SY679_.jpg" alt="Película 1">
+        <img src="https://m.media-amazon.com/images/I/61+dbbSErxL._AC_SY679_.jpg" alt="Película 2">
+        <img src="https://m.media-amazon.com/images/I/91jNWzrdpTL._AC_SY679_.jpg" alt="Película 3">
+        <img src="https://m.media-amazon.com/images/I/61+dbbSErxL._AC_SY679_.jpg" alt="Película 4">
+        <img src="https://m.media-amazon.com/images/I/91jNWzrdpTL._AC_SY679_.jpg" alt="Película 5">
+        <img src="https://m.media-amazon.com/images/I/61+dbbSErxL._AC_SY679_.jpg" alt="Película 6">
+    </div>
+
+</body>
+</html>
